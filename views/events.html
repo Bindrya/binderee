@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events & Booking</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+  <nav>
+    <div class="logo">𝔰𝔴</div>
+    <ul class="nav-links">
+      <li><a href="/home">Home</a></li>
+      <li><a href="/product">Product</a></li>
+      <li><a href="/events" class="active">Events</a></li>
+      <li><a href="/faq">FAQ</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <main>
+    <h1>Upcoming Events</h1>
+    <p>Check out our upcoming events here.</p>
+
+    <section class="events-booking">
+      <h2>Book Your Event</h2>
+      <form id="event-form">
+        <label for="event-name">Event Name:</label>
+        <input type="text" id="event-name" name="event-name" required>
+
+        <label for="participants">Number of Participants (min 20):</label>
+        <input type="number" id="participants" name="participants" min="20" required>
+
+        <label for="event-date">Preferred Date:</label>
+        <input type="date" id="event-date" name="event-date" required>
+
+        <button type="submit">Submit Booking</button>
+      </form>
+
+      <div id="event-summary"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Sunny Resort</p>
+  </footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>

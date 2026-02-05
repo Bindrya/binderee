@@ -10,28 +10,29 @@ app.use(express.json())
 app.use(cors())
 
 // static files (HTML, CSS, JS)
-app.use(express.static(path.join(__dirname, 'public')))
+// static files (HTML-д хэрэглэгдэх CSS, JS, images)
+app.use(express.static(path.join(__dirname, 'public')));
 
 // root route -> home.html руу чиглүүлэх
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'home.html'))
+  res.sendFile(path.join(__dirname, 'views', 'home.html'))
 })
 
 // clean routes
 app.get('/home', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'home.html'))
+  res.sendFile(path.join(__dirname, 'views', 'home.html'))
 })
 
 app.get('/product', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'product.html'))
+  res.sendFile(path.join(__dirname, 'views', 'product.html'))
 })
 
 app.get('/events', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'events.html'))
+  res.sendFile(path.join(__dirname, 'views', 'events.html'))
 })
 
 app.get('/faq', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'faq.html'))
+  res.sendFile(path.join(__dirname, 'views', 'faq.html'))
 })
 
 // API routes

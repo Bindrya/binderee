@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking & FAQ</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+          <nav>
+          <div class="logo">
+      𝔰𝔴
+    </div>
+      <ul class="nav-links">
+        <li><a href="/home">Home</a></li>
+        <li><a href="/product">Product</a></li>
+        <li><a href="/events">Events</a></li>
+        <li><a href="/faq" class="active">FAQ & Booking</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Frequently Asked Questions</h1>
+    <p>Find answers to common questions here.</p>
+
+    <section class="faq">
+      <ul>
+        <li>What are check-in and check-out times?</li>
+        <li>Do you offer airport transfers?</li>
+        <li>Are pets allowed?</li>
+      </ul>
+    </section>
+
+    <section class="booking">
+      <h2>Book Your Stay</h2>
+      <form id="booking-form">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="service">Select Service:</label>
+        <select id="service" name="service" required>
+          <option value="beach-villa">Beach Villa</option>
+          <option value="spa-package">Spa Package</option>
+          <option value="gourmet-dining">Gourmet Dining</option>
+        </select>
+
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <button type="submit">Submit Booking</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Sunny Resort</p>
+  </footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>
